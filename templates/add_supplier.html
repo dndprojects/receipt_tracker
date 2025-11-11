@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>{{ _('Add New Supplier') }}</h1>
+    <form method="POST">
+        <label for="name">{{ _('Supplier Name') }}</label>
+        <input type="text" name="name" id="name" required>
+        
+        <label for="keywords">{{ _('Scan Keywords (for AI Training)') }}</label>
+        <input type="text" name="keywords" id="keywords" placeholder="{{ _('e.g., supplier_inc, supplier_ltd, invoice_name') }}">
+        <small>{{ _('Enter comma-separated words found on this supplier\'s receipts to help the scanner find it.') }}</small>
+
+        <button type="submit" style="margin-top: 15px;">{{ _('Submit') }}</button>
+    </form>
+{% endblock %}

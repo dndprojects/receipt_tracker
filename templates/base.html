@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="{{ get_locale() }}" dir="{{ 'rtl' if get_locale() == 'he' else 'ltr' }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ _('Box Distribution') }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>{{ _('Box Distribution Management System') }}</h1>
+        <nav>
+            <a href="{{ url_for('index') }}">{{ _('Home') }}</a>
+            <a href="{{ url_for('add_delivery') }}">{{ _('Add Delivery') }}</a>
+            <a href="{{ url_for('add_store') }}">{{ _('Add Store') }}</a>
+            <a href="{{ url_for('add_box_type') }}">{{ _('Add Box Type') }}</a>
+            <a href="{{ url_for('deliveries_by_store_month') }}">{{ _('Filter by Month') }}</a>
+        </nav>
+    </header>
+    <main>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            <ul class="flash-messages">
+            {% for category, message in messages %}
+              <li class="{{ category }}">{{ message }}</li>
+            {% endfor %}
+            </ul>
+          {% endif %}
+        {% endwith %}
+        
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+        <p>{{ _('Box Distribution System') }} &copy; 2024</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>{{ _('Add New Box Type') }}</h1>
+    <form method="POST">
+        <label for="type_name">{{ _('Box Type Name') }}</label>
+        <input type="text" name="type_name" id="type_name" required>
+
+        <label for="keywords">{{ _('Scan Keywords') }}</label>
+        <input type="text" name="keywords" id="keywords" placeholder="{{ _('e.g., SKU, product_code') }}">
+
+        <button type="submit">{{ _('Submit') }}</button>
+    </form>
+{% endblock %}

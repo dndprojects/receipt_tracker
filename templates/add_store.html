@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>{{ _('Add New Store') }}</h1>
+    <form method="POST">
+        <label for="name">{{ _('Store Name') }}</label>
+        <input type="text" name="name" id="name" required>
+        
+        <label for="phone">{{ _('Phone Number (WhatsApp)') }}</label>
+        <input type="text" name="phone" id="phone" placeholder="e.g., 0501234567">
+        
+        <label for="address">{{ _('Address') }}</label>
+        <input type="text" name="address" id="address">
+        
+        <label for="keywords">{{ _('Scan Keywords') }}</label>
+        <input type="text" name="keywords" id="keywords" placeholder="{{ _('e.g., nickname, abn_number') }}">
+        
+        <button type="submit">{{ _('Submit') }}</button>
+    </form>
+{% endblock %}

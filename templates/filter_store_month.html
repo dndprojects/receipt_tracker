@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>{{ _('Filter Deliveries by Store and Month') }}</h1>
+    <form method="POST">
+        <label for="store_id">{{ _('Select Store') }}</label>
+        <select name="store_id" id="store_id" required>
+            {% for store in stores %}
+            <option value="{{ store.id }}">{{ store.name }}</option>
+            {% endfor %}
+        </select>
+
+        <label for="month">{{ _('Select Month') }}</label>
+        <input type="number" name="month" id="month" min="1" max="12" required>
+
+        <button type="submit">{{ _('Filter') }}</button>
+    </form>
+{% endblock %}

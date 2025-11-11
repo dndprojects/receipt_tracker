@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block content %}
+    
+    <h2>{{ _('All Deliveries') }}</h2>
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>{{ _('Receipt #') }}</th>
+                    <th>{{ _('Date') }}</th>
+                    <th>{{ _('Store') }}</th>
+                    <th>{{ _('Box Type') }}</th>
+                    <th>{{ _('Content') }}</th>
+                    <th>{{ _('Cartons') }}</th>
+                    <th>{{ _('Baskets') }}</th>
+                    <th>{{ _('Receipt Image') }}</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for delivery in deliveries %}
+                <tr>
+                    <td><strong>{{ delivery.receipt_number or 'N/A' }}</strong></td>
+                    <td>{{ delivery.date.strftime('%Y-%m-%d') }}</td>
+                    <td>{{ delivery.store.name }}</td>
+                    <td>{{ delivery.box_type.type_name }}</td>
+                    <td>{{ delivery.delivery_content or 'N/A' }}</td>
+                    <td>{{ delivery.quantity_carton }}</td>
+                    <td>{{ delivery.quantity_basket }}</td>
+                    <td>
+                        {% if delivery.generated_image_path %}
+                            <a href="{{ url_for('static', filename=delivery.generated_image_path.replace('static/', '')) }}" target="_blank">
+                                {{ _('View Receipt') }}
+                            </a>
+                        {% else %}
+                            -
+                        {% endif %}
+                    </td>
+                </tr>
+                {% else %}
+                <tr>
+                    <td colspan="8">{{ _('No deliveries found.') }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+{% endblock %}

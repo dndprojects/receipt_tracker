@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>תעודת משלוח</title>
+    <style>
+        body {
+            font-family: Arial, 'David', sans-serif;
+            width: 700px;
+            margin: 0;
+            padding: 15px;
+            box-sizing: border-box;
+            background-color: #fff;
+            color: #000;
+        }
+        .header {
+            text-align: right;
+            margin-bottom: 10px;
+        }
+        .header h1 {
+            font-size: 1.8em;
+            font-weight: bold;
+            margin: 0;
+        }
+        .header p {
+            font-size: 1em;
+            margin: 4px 0;
+        }
+        .title-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #000;
+            padding-bottom: 5px;
+            margin: 20px 0;
+        }
+        .doc-title {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .doc-number {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .info-grid {
+            width: 100%;
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            border-collapse: collapse;
+        }
+        .info-grid td {
+            padding: 4px;
+        }
+        .info-grid .label {
+            padding-left: 10px;
+            width: 10%;
+            white-space: nowrap;
+        }
+        .info-grid .value {
+            border-bottom: 1px dotted #333;
+            width: 40%;
+        }
+
+        .delivery-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+        .delivery-table th, .delivery-table td {
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: right;
+            vertical-align: top;
+            height: 30px;
+        }
+        .delivery-table th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+            padding: 12px 10px;
+        }
+        .delivery-table .col-code { width: 10%; }
+        .delivery-table .col-details { width: 45%; word-wrap: break-word; }
+        .delivery-table .col-carton { width: 15%; text-align: center;}
+        .delivery-table .col-basket { width: 15%; text-align: center;}
+        .delivery-table .col-amount { width: 10%; text-align: right;}
+
+        .footer {
+            margin-top: 40px;
+        }
+        .footer-line {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            text-align: right;
+        }
+        .signature-area {
+            margin-top: 50px;
+            width: 100%;
+            font-size: 1.1em;
+            border-collapse: collapse;
+        }
+        .signature-area td {
+            padding: 10px;
+            width: 50%;
+            text-align: right;
+        }
+        .signature-line {
+            border-bottom: 1px solid #000;
+            height: 40px;
+            width: 250px;
+            vertical-align: bottom;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>ראובן ששון שיווק תוצרת חקלאית</h1>
+        <p>רח' המלכים 10 כפר-סבא טל: 053-5327837</p>
+        <p>ע.מ 25670969</p>
+    </div>
+
+    <div class="title-row">
+        <span class="doc-title">תעודת משלוח מס'</span>
+        <span class="doc-number">{{ receipt_number }}</span>
+    </div>
+
+    <table class="info-grid">
+        <tr>
+            <td class="label">לכבוד:</td>
+            <td class="value">{{ store_name }}</td>
+            <td class="label">תאריך:</td>
+            <td class="value">{{ delivery_date }}</td>
+        </tr>
+        <tr>
+            <td class="label">כתובת:</td>
+            <td class="value">{{ store_address or '' }}</td>
+            <td class="label">ש. יציאה:</td>
+            <td class="value">{{ exit_time or '' }}</td>
+        </tr>
+         <tr>
+            <td class="label">מס' רכב:</td>
+            <td class="value">{{ vehicle_number or '' }}</td>
+            <td class="label"></td>
+            <td class="value"></td>
+        </tr>
+    </table>
+
+    <table class="delivery-table">
+        <thead>
+            <tr>
+                <th class="col-code">קוד</th>
+                <th class="col-details">פירוט</th>
+                <th class="col-carton">כמות קרטונים</th>
+                <th class="col-basket">כמות סלסלות</th>
+                <th class="col-amount">סכום</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="col-code"></td>
+                <td class="col-details">{{ delivery_content }}</td>
+                <td class="col-carton">{{ quantity_carton }}</td>
+                <td class="col-basket">{{ quantity_basket }}</td>
+                <td class="col-amount"></td>
+            </tr>
+            <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3"></td>
+                <td style="text-align: right; font-weight: bold;">סה"כ</td>
+                <td class="col-amount"></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <div class="footer">
+        <div class="footer-line">
+            <span>קיבלתי את המשלוח בשלמות.</span>
+        </div>
+        
+        <table class="signature-area">
+            <tr>
+                <td>חתימת המקבל:</td>
+                <td class="signature-line"></td>
+            </tr>
+             <tr>
+                <td style="padding-top: 30px;">חתימה:</td>
+                <td class="signature-line" style="padding-top: 30px;"></td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>

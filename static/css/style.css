@@ -1,0 +1,155 @@
+/* --- Global --- */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background: #fdfdfd;
+    padding-top: 120px; /* Offset for sticky header */
+}
+main {
+    padding: 1em;
+}
+@media (min-width: 768px) {
+    main { padding: 2em; }
+    header h1 { text-align: left; }
+    header nav { text-align: left; }
+    button { width: auto; }
+}
+
+/* --- Header / Nav --- */
+header {
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    background: #333; 
+    color: white; 
+    padding: 1em; 
+    z-index: 1000;
+    box-sizing: border-box;
+}
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+    text-align: center;
+}
+header nav {
+    margin-top: 10px;
+    text-align: center;
+}
+header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 3px;
+    display: inline-block;
+}
+header nav a:hover {
+    background: #555;
+}
+footer {
+    text-align: center;
+    padding: 1em;
+    background: #eee;
+    color: #777;
+    margin-top: 2em;
+}
+
+/* --- Table Styles --- */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+    text-align: left;
+    min-width: 800px; /* Allow horizontal scroll */
+}
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 12px 8px;
+    white-space: nowrap;
+}
+table th {
+    background: #f4f4f4;
+    font-weight: bold;
+    text-align: left;
+}
+table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* --- Form Styles --- */
+form {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+form input[type="text"],
+form input[type="number"],
+form input[type="date"],
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+.quantity-grid {
+    display: flex;
+    gap: 10px;
+}
+.quantity-grid div {
+    flex: 1; /* Make all columns equal width */
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+button:hover {
+    background-color: #45a049;
+}
+
+/* --- Flash Messages --- */
+.flash-messages {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+.flash-messages li {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+.flash-messages .success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+.flash-messages .danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}

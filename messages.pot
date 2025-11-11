@@ -1,0 +1,478 @@
+# Translations template for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-11-10 01:54+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: templates/add_box_type.html:3
+msgid "Add New Box Type"
+msgstr ""
+
+#: templates/add_box_type.html:5
+msgid "Box Type Name"
+msgstr ""
+
+#: templates/add_box_type.html:8 templates/add_contact.html:14
+#: templates/add_store.html:14 templates/add_supplier.html:8
+msgid "Scan Keywords (for AI Training)"
+msgstr ""
+
+#: templates/add_box_type.html:9
+msgid "e.g., large_box, SKU12345, product_code"
+msgstr ""
+
+#: templates/add_box_type.html:10
+msgid ""
+"Enter comma-separated words found on receipts to help the scanner find "
+"this box type."
+msgstr ""
+
+#: templates/add_box_type.html:12 templates/add_contact.html:18
+#: templates/add_store.html:18 templates/add_supplier.html:12
+msgid "Submit"
+msgstr ""
+
+#: templates/add_contact.html:3 templates/add_store.html:3
+msgid "Add New Contact (Store/Supplier)"
+msgstr ""
+
+#: templates/add_contact.html:5 templates/add_store.html:5
+msgid "Contact Name"
+msgstr ""
+
+#: templates/add_contact.html:8 templates/add_store.html:8
+msgid "Phone Number (WhatsApp)"
+msgstr ""
+
+#: templates/add_contact.html:11 templates/add_store.html:11
+msgid "Address"
+msgstr ""
+
+#: templates/add_contact.html:15 templates/add_store.html:15
+msgid "e.g., nickname, abn_number, receipt_name"
+msgstr ""
+
+#: templates/add_contact.html:16 templates/add_store.html:16
+msgid ""
+"Enter comma-separated words found on receipts to help the scanner find "
+"this contact."
+msgstr ""
+
+#: templates/add_delivery.html:3
+msgid "Send Delivery (Boxes OUT)"
+msgstr ""
+
+#: templates/add_delivery.html:7 templates/receive_stock.html:7
+msgid "Data scanned from receipt. Please check and confirm."
+msgstr ""
+
+#: templates/add_delivery.html:9 templates/receive_stock.html:9
+msgid "Original Scan Attached:"
+msgstr ""
+
+#: templates/add_delivery.html:9 templates/receive_stock.html:9
+msgid "View Image"
+msgstr ""
+
+#: templates/add_delivery.html:18
+msgid "Contact (Destination)"
+msgstr ""
+
+#: templates/add_delivery.html:20 templates/edit_transaction.html:22
+#: templates/receive_stock.html:33
+msgid "Select Contact..."
+msgstr ""
+
+#: templates/add_delivery.html:28 templates/deliveries_by_store_month.html:16
+#: templates/edit_transaction.html:10 templates/index.html:70
+#: templates/index.html:102 templates/receive_stock.html:60
+#: templates/sign_receipt.html:7
+msgid "Box Type"
+msgstr ""
+
+#: templates/add_delivery.html:30 templates/edit_transaction.html:12
+#: templates/receive_stock.html:62
+msgid "Select Box Type..."
+msgstr ""
+
+#: templates/add_delivery.html:36 templates/edit_transaction.html:38
+msgid "Delivery Content (Details)"
+msgstr ""
+
+#: templates/add_delivery.html:37 templates/edit_transaction.html:40
+msgid "e.g. Tomatoes, Cucumbers"
+msgstr ""
+
+#: templates/add_delivery.html:38 templates/edit_transaction.html:41
+msgid "If empty, the Box Type name will be used."
+msgstr ""
+
+#: templates/add_delivery.html:42 templates/edit_transaction.html:45
+msgid "Quantity (Cartons)"
+msgstr ""
+
+#: templates/add_delivery.html:46 templates/edit_transaction.html:50
+msgid "Quantity (Boxes)"
+msgstr ""
+
+#: templates/add_delivery.html:50 templates/edit_transaction.html:55
+msgid "Quantity (Baskets)"
+msgstr ""
+
+#: templates/add_delivery.html:55 templates/edit_transaction.html:7
+#: templates/index.html:100 templates/receive_stock.html:74
+msgid "Date"
+msgstr ""
+
+#: templates/add_delivery.html:58
+msgid "Submit & Send Receipt"
+msgstr ""
+
+#: templates/add_supplier.html:3
+msgid "Add New Supplier"
+msgstr ""
+
+#: templates/add_supplier.html:5
+msgid "Supplier Name"
+msgstr ""
+
+#: templates/add_supplier.html:9
+msgid "e.g., supplier_inc, supplier_ltd, invoice_name"
+msgstr ""
+
+#: templates/add_supplier.html:10
+msgid ""
+"Enter comma-separated words found on this supplier's receipts to help the"
+" scanner find it."
+msgstr ""
+
+#: templates/base.html:6
+msgid "Box Distribution"
+msgstr ""
+
+#: templates/base.html:11
+msgid "Box Distribution Management System"
+msgstr ""
+
+#: templates/base.html:13
+msgid "Home"
+msgstr ""
+
+#: templates/base.html:15
+msgid "+ Receive Stock (IN)"
+msgstr ""
+
+#: templates/base.html:16 templates/base.html:19
+msgid "Scan"
+msgstr ""
+
+#: templates/base.html:18
+msgid "- Send Delivery (OUT)"
+msgstr ""
+
+#: templates/base.html:21
+msgid "Add Contact"
+msgstr ""
+
+#: templates/base.html:22
+msgid "Add Box Type"
+msgstr ""
+
+#: templates/base.html:40
+msgid "Box Distribution System"
+msgstr ""
+
+#: templates/deliveries_by_store_month.html:5
+msgid "Deliveries by Store and Month"
+msgstr ""
+
+#: templates/deliveries_by_store_month.html:9
+msgid "Deliveries for Store"
+msgstr ""
+
+#: templates/deliveries_by_store_month.html:10
+#: templates/deliveries_by_store_month.html:15 templates/index.html:15
+#: templates/store_summary.html:8
+msgid "Month"
+msgstr ""
+
+#: templates/deliveries_by_store_month.html:14 templates/receive_stock.html:49
+#: templates/sign_receipt.html:6
+msgid "Store"
+msgstr ""
+
+#: templates/deliveries_by_store_month.html:17 templates/index.html:103
+#: templates/sign_receipt.html:8
+msgid "Quantity"
+msgstr ""
+
+#: templates/deliveries_by_store_month.html:31 templates/store_summary.html:26
+msgid "Back to Home"
+msgstr ""
+
+#: templates/edit_transaction.html:3
+msgid "Edit Transaction"
+msgstr ""
+
+#: templates/edit_transaction.html:20 templates/index.html:41
+msgid "Contact"
+msgstr ""
+
+#: templates/edit_transaction.html:33 templates/receive_stock.html:70
+msgid "Quantity Received"
+msgstr ""
+
+#: templates/edit_transaction.html:63
+msgid "Save Changes"
+msgstr ""
+
+#: templates/edit_transaction.html:64
+msgid "Cancel"
+msgstr ""
+
+#: templates/filter_store_month.html:5
+msgid "Filter Deliveries by Contact/Month"
+msgstr ""
+
+#: templates/filter_store_month.html:9
+msgid "Filter Deliveries by Contact and Month"
+msgstr ""
+
+#: templates/filter_store_month.html:11
+msgid "Select Contact"
+msgstr ""
+
+#: templates/filter_store_month.html:18
+msgid "Select Month"
+msgstr ""
+
+#: templates/filter_store_month.html:21 templates/index.html:53
+msgid "Filter"
+msgstr ""
+
+#: templates/index.html:6 templates/index.html:101
+msgid "Type"
+msgstr ""
+
+#: templates/index.html:8
+msgid "All Types"
+msgstr ""
+
+#: templates/index.html:9
+msgid "IN (Receive)"
+msgstr ""
+
+#: templates/index.html:10
+msgid "OUT (Send)"
+msgstr ""
+
+#: templates/index.html:17
+msgid "All Months"
+msgstr ""
+
+#: templates/index.html:28
+msgid "Week"
+msgstr ""
+
+#: templates/index.html:30
+msgid "All Weeks"
+msgstr ""
+
+#: templates/index.html:43
+msgid "All Contacts"
+msgstr ""
+
+#: templates/index.html:54 templates/sign_receipt.html:20
+msgid "Clear"
+msgstr ""
+
+#: templates/index.html:58
+msgid "Filtered Summary"
+msgstr ""
+
+#: templates/index.html:60
+msgid "Total Cartons:"
+msgstr ""
+
+#: templates/index.html:61
+msgid "Total Boxes:"
+msgstr ""
+
+#: templates/index.html:62
+msgid "Total Baskets:"
+msgstr ""
+
+#: templates/index.html:65
+msgid "Summary by Box Type"
+msgstr ""
+
+#: templates/index.html:71
+msgid "Total Cartons"
+msgstr ""
+
+#: templates/index.html:72
+msgid "Total Boxes"
+msgstr ""
+
+#: templates/index.html:73
+msgid "Total Baskets"
+msgstr ""
+
+#: templates/index.html:86
+msgid "No summary data for this filter."
+msgstr ""
+
+#: templates/index.html:94
+msgid "All Transactions"
+msgstr ""
+
+#: templates/index.html:99
+msgid "TX #"
+msgstr ""
+
+#: templates/index.html:104
+msgid "From/To"
+msgstr ""
+
+#: templates/index.html:105
+msgid "Gen. Receipt"
+msgstr ""
+
+#: templates/index.html:106
+msgid "Orig. Scan"
+msgstr ""
+
+#: templates/index.html:107 templates/index.html:169
+msgid "Edit"
+msgstr ""
+
+#: templates/index.html:123
+msgid "IN"
+msgstr ""
+
+#: templates/index.html:125
+msgid "OUT"
+msgstr ""
+
+#: templates/index.html:160
+msgid "View"
+msgstr ""
+
+#: templates/index.html:175
+msgid "No transactions found."
+msgstr ""
+
+#: templates/receive_stock.html:3
+msgid "Receive Stock (Boxes IN)"
+msgstr ""
+
+#: templates/receive_stock.html:19
+msgid "Source:"
+msgstr ""
+
+#: templates/receive_stock.html:22
+msgid "Existing Contact"
+msgstr ""
+
+#: templates/receive_stock.html:26
+msgid "Add New Sender"
+msgstr ""
+
+#: templates/receive_stock.html:31
+msgid "Contact (Source)"
+msgstr ""
+
+#: templates/receive_stock.html:43
+msgid "New Sender Details"
+msgstr ""
+
+#: templates/receive_stock.html:44
+msgid "New Sender Name"
+msgstr ""
+
+#: templates/receive_stock.html:47
+msgid "Sender Type:"
+msgstr ""
+
+#: templates/receive_stock.html:48
+msgid "Supplier"
+msgstr ""
+
+#: templates/receive_stock.html:51
+msgid "Phone (Optional)"
+msgstr ""
+
+#: templates/receive_stock.html:54
+msgid "Address (Optional)"
+msgstr ""
+
+#: templates/receive_stock.html:77
+msgid "Add to Inventory"
+msgstr ""
+
+#: templates/scan_delivery.html:3 templates/upload_ocr.html:3
+msgid "Scan Delivery Receipt (OUT)"
+msgstr ""
+
+#: templates/scan_delivery.html:4 templates/upload_ocr.html:4
+msgid ""
+"Upload a picture of a delivery receipt. The app will try to find the "
+"Store and Quantity to pre-fill the \"Send Delivery\" form."
+msgstr ""
+
+#: templates/scan_delivery.html:7 templates/scan_restock.html:7
+#: templates/upload_ocr.html:7
+msgid "Receipt Image"
+msgstr ""
+
+#: templates/scan_delivery.html:9 templates/scan_restock.html:9
+#: templates/upload_ocr.html:9
+msgid "Scan Image"
+msgstr ""
+
+#: templates/scan_restock.html:3
+msgid "Scan Restock Invoice (IN)"
+msgstr ""
+
+#: templates/scan_restock.html:4
+msgid ""
+"Upload a picture of a supplier invoice. The app will try to find the Box "
+"Type and Quantity to pre-fill the \"Receive Stock\" form."
+msgstr ""
+
+#: templates/sign_receipt.html:3
+msgid "Sign for Delivery"
+msgstr ""
+
+#: templates/sign_receipt.html:13
+msgid "Please sign below:"
+msgstr ""
+
+#: templates/sign_receipt.html:21
+msgid "Confirm & Send Receipt"
+msgstr ""
+
+#: templates/store_summary.html:3
+msgid "Delivery Summary for"
+msgstr ""
+
+#: templates/store_summary.html:9
+msgid "Total Quantity"
+msgstr ""
+
+#: templates/store_summary.html:20
+msgid "No deliveries found for this store."
+msgstr ""
+

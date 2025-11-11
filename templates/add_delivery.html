@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>{{ _('Add New Delivery') }}</h1>
+    <form method="POST">
+        
+        <label for="date">{{ _('Date') }}</label>
+        <input type="date" name="date" id="date" value="{{ today_date }}" required>
+        
+        <label for="store_id">{{ _('Store (Lekavod)') }}</label>
+        <select name="store_id" id="store_id" required>
+            <option value="">{{ _('Select Contact...') }}</option>
+            {% for store in stores %}
+            <option value="{{ store.id }}">{{ store.name }}</option>
+            {% endfor %}
+        </select>
+        
+        <label for="box_type_id">{{ _('Box Type') }}</label>
+        <select name="box_type_id" id="box_type_id" required>
+            <option value="">{{ _('Select Box Type...') }}</option>
+            {% for box_type in box_types %}
+            <option value="{{ box_type.id }}">{{ box_type.type_name }}</option>
+            {% endfor %}
+        </select>
+        
+        <label for="delivery_content">{{ _('Delivery Content (Details)') }}</label>
+        <input type="text" name="delivery_content" id="delivery_content" placeholder="{{ _('e.g. Tomatoes (if different from Box Type)') }}">
+        
+        <div class="quantity-grid">
+            <div>
+                <label for="quantity_carton">{{ _('Quantity (Cartons)') }}</label>
+                <input type="number" name="quantity_carton" id="quantity_carton" min="0" value="0">
+            </div>
+            <div>
+                <label for="quantity_basket">{{ _('Quantity (Baskets)') }}</label>
+                <input type="number" name="quantity_basket" id="quantity_basket" min="0" value="0">
+            </div>
+        </div>
+
+        <label for="vehicle_number">{{ _('Vehicle Number') }}</label>
+        <input type="text" name="vehicle_number" id="vehicle_number">
+
+        <label for="exit_time">{{ _('Exit Time') }}</label>
+        <input type="text" name="exit_time" id="exit_time" placeholder="e.g. 09:30">
+        
+        <button type="submit">{{ _('Submit & Generate Receipt') }}</button>
+    </form>
+{% endblock %}

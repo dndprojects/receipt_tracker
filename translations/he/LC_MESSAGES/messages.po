@@ -1,0 +1,459 @@
+#: templates/add_box_type.html:3
+msgid "Add New Box Type"
+msgstr "הוסף סוג ארגז חדש"
+
+#: templates/add_box_type.html:5
+msgid "Box Type Name"
+msgstr "שם סוג הארגז"
+
+#: templates/add_box_type.html:8 templates/add_contact.html:14
+#: templates/add_store.html:14 templates/add_supplier.html:8
+msgid "Scan Keywords (for AI Training)"
+msgstr "מילות מפתח לסריקה (לאימון הבינה המלאכותית)"
+
+#: templates/add_box_type.html:9
+msgid "e.g., large_box, SKU12345, product_code"
+msgstr "לדוגמה: large_box, SKU12345, product_code"
+
+#: templates/add_box_type.html:10
+msgid ""
+"Enter comma-separated words found on receipts to help the scanner find "
+"this box type."
+msgstr "הזן מילים המופיעות בקבלות, מופרדות בפסיקים, כדי לסייע לסורק לזהות את סוג הארגז."
+
+#: templates/add_box_type.html:12 templates/add_contact.html:18
+#: templates/add_store.html:18 templates/add_supplier.html:12
+msgid "Submit"
+msgstr "שלח"
+
+#: templates/add_contact.html:3 templates/add_store.html:3
+msgid "Add New Contact (Store/Supplier)"
+msgstr "הוסף איש קשר חדש (חנות/ספק)"
+
+#: templates/add_contact.html:5 templates/add_store.html:5
+msgid "Contact Name"
+msgstr "שם איש הקשר"
+
+#: templates/add_contact.html:8 templates/add_store.html:8
+msgid "Phone Number (WhatsApp)"
+msgstr "מספר טלפון (וואטסאפ)"
+
+#: templates/add_contact.html:11 templates/add_store.html:11
+msgid "Address"
+msgstr "כתובת"
+
+#: templates/add_contact.html:15 templates/add_store.html:15
+msgid "e.g., nickname, abn_number, receipt_name"
+msgstr "לדוגמה: כינוי, מספר עוסק, שם בקבלה"
+
+#: templates/add_contact.html:16 templates/add_store.html:16
+msgid ""
+"Enter comma-separated words found on receipts to help the scanner find "
+"this contact."
+msgstr "הזן מילים המופיעות בקבלות, מופרדות בפסיקים, כדי לסייע לסורק לזהות את איש הקשר."
+
+#: templates/add_delivery.html:3
+msgid "Send Delivery (Boxes OUT)"
+msgstr "שליחת משלוח (ארגזים יוצאים)"
+
+#: templates/add_delivery.html:7 templates/receive_stock.html:7
+msgid "Data scanned from receipt. Please check and confirm."
+msgstr "הנתונים נסרקו מהקבלה. אנא בדוק ואשר."
+
+#: templates/add_delivery.html:9 templates/receive_stock.html:9
+msgid "Original Scan Attached:"
+msgstr "סריקה מקורית מצורפת:"
+
+#: templates/add_delivery.html:9 templates/receive_stock.html:9
+msgid "View Image"
+msgstr "צפה בתמונה"
+
+#: templates/add_delivery.html:18
+msgid "Contact (Destination)"
+msgstr "איש קשר (יעד)"
+
+#: templates/add_delivery.html:20 templates/edit_transaction.html:22
+#: templates/receive_stock.html:33
+msgid "Select Contact..."
+msgstr "בחר איש קשר..."
+
+#: templates/add_delivery.html:28 templates/deliveries_by_store_month.html:16
+#: templates/edit_transaction.html:10 templates/index.html:70
+#: templates/index.html:102 templates/receive_stock.html:60
+#: templates/sign_receipt.html:7
+msgid "Box Type"
+msgstr "סוג הארגז"
+
+#: templates/add_delivery.html:30 templates/edit_transaction.html:12
+#: templates/receive_stock.html:62
+msgid "Select Box Type..."
+msgstr "בחר סוג ארגז..."
+
+#: templates/add_delivery.html:36 templates/edit_transaction.html:38
+msgid "Delivery Content (Details)"
+msgstr "תוכן המשלוח (פרטים)"
+
+#: templates/add_delivery.html:37 templates/edit_transaction.html:40
+msgid "e.g. Tomatoes, Cucumbers"
+msgstr "לדוגמה: עגבניות, מלפפונים"
+
+#: templates/add_delivery.html:38 templates/edit_transaction.html:41
+msgid "If empty, the Box Type name will be used."
+msgstr "אם ריק, ייעשה שימוש בשם סוג הארגז."
+
+#: templates/add_delivery.html:42 templates/edit_transaction.html:45
+msgid "Quantity (Cartons)"
+msgstr "כמות (קרטונים)"
+
+#: templates/add_delivery.html:46 templates/edit_transaction.html:50
+msgid "Quantity (Boxes)"
+msgstr "כמות (ארגזים)"
+
+#: templates/add_delivery.html:50 templates/edit_transaction.html:55
+msgid "Quantity (Baskets)"
+msgstr "כמות (סלים)"
+
+#: templates/add_delivery.html:55 templates/edit_transaction.html:7
+#: templates/index.html:100 templates/receive_stock.html:74
+msgid "Date"
+msgstr "תאריך"
+
+#: templates/add_delivery.html:58
+msgid "Submit & Send Receipt"
+msgstr "שלח ואשר קבלה"
+
+#: templates/add_supplier.html:3
+msgid "Add New Supplier"
+msgstr "הוסף ספק חדש"
+
+#: templates/add_supplier.html:5
+msgid "Supplier Name"
+msgstr "שם הספק"
+
+#: templates/add_supplier.html:9
+msgid "e.g., supplier_inc, supplier_ltd, invoice_name"
+msgstr "לדוגמה: supplier_inc, supplier_ltd, invoice_name"
+
+#: templates/add_supplier.html:10
+msgid ""
+"Enter comma-separated words found on this supplier's receipts to help the"
+" scanner find it."
+msgstr "הזן מילים המופיעות בקבלות של ספק זה, מופרדות בפסיקים, כדי לסייע לסורק לזהותו."
+
+#: templates/base.html:6
+msgid "Box Distribution"
+msgstr "ניהול הפצת ארגזים"
+
+#: templates/base.html:11
+msgid "Box Distribution Management System"
+msgstr "מערכת לניהול הפצת ארגזים"
+
+#: templates/base.html:13
+msgid "Home"
+msgstr "דף הבית"
+
+#: templates/base.html:15
+msgid "+ Receive Stock (IN)"
+msgstr "+ קבלת מלאי (נכנס)"
+
+#: templates/base.html:16 templates/base.html:19
+msgid "Scan"
+msgstr "סרוק"
+
+#: templates/base.html:18
+msgid "- Send Delivery (OUT)"
+msgstr "- שליחת משלוח (יוצא)"
+
+#: templates/base.html:21
+msgid "Add Contact"
+msgstr "הוסף איש קשר"
+
+#: templates/base.html:22
+msgid "Add Box Type"
+msgstr "הוסף סוג ארגז"
+
+#: templates/base.html:40
+msgid "Box Distribution System"
+msgstr "מערכת הפצת ארגזים"
+
+#: templates/deliveries_by_store_month.html:5
+msgid "Deliveries by Store and Month"
+msgstr "משלוחים לפי חנות וחודש"
+
+#: templates/deliveries_by_store_month.html:9
+msgid "Deliveries for Store"
+msgstr "משלוחים לחנות"
+
+#: templates/deliveries_by_store_month.html:10
+#: templates/deliveries_by_store_month.html:15 templates/index.html:15
+#: templates/store_summary.html:8
+msgid "Month"
+msgstr "חודש"
+
+#: templates/deliveries_by_store_month.html:14 templates/receive_stock.html:49
+#: templates/sign_receipt.html:6
+msgid "Store"
+msgstr "חנות"
+
+#: templates/deliveries_by_store_month.html:17 templates/index.html:103
+#: templates/sign_receipt.html:8
+msgid "Quantity"
+msgstr "כמות"
+
+#: templates/deliveries_by_store_month.html:31 templates/store_summary.html:26
+msgid "Back to Home"
+msgstr "חזרה לדף הבית"
+
+#: templates/edit_transaction.html:3
+msgid "Edit Transaction"
+msgstr "ערוך עסקה"
+
+#: templates/edit_transaction.html:20 templates/index.html:41
+msgid "Contact"
+msgstr "איש קשר"
+
+#: templates/edit_transaction.html:33 templates/receive_stock.html:70
+msgid "Quantity Received"
+msgstr "כמות שהתקבלה"
+
+#: templates/edit_transaction.html:63
+msgid "Save Changes"
+msgstr "שמור שינויים"
+
+#: templates/edit_transaction.html:64
+msgid "Cancel"
+msgstr "בטל"
+
+#: templates/filter_store_month.html:5
+msgid "Filter Deliveries by Contact/Month"
+msgstr "סינון משלוחים לפי איש קשר/חודש"
+
+#: templates/filter_store_month.html:9
+msgid "Filter Deliveries by Contact and Month"
+msgstr "סנן משלוחים לפי איש קשר וחודש"
+
+#: templates/filter_store_month.html:11
+msgid "Select Contact"
+msgstr "בחר איש קשר"
+
+#: templates/filter_store_month.html:18
+msgid "Select Month"
+msgstr "בחר חודש"
+
+#: templates/filter_store_month.html:21 templates/index.html:53
+msgid "Filter"
+msgstr "סנן"
+
+#: templates/index.html:6 templates/index.html:101
+msgid "Type"
+msgstr "סוג"
+
+#: templates/index.html:8
+msgid "All Types"
+msgstr "כל הסוגים"
+
+#: templates/index.html:9
+msgid "IN (Receive)"
+msgstr "נכנס (קבלה)"
+
+#: templates/index.html:10
+msgid "OUT (Send)"
+msgstr "יוצא (משלוח)"
+
+#: templates/index.html:17
+msgid "All Months"
+msgstr "כל החודשים"
+
+#: templates/index.html:28
+msgid "Week"
+msgstr "שבוע"
+
+#: templates/index.html:30
+msgid "All Weeks"
+msgstr "כל השבועות"
+
+#: templates/index.html:43
+msgid "All Contacts"
+msgstr "כל אנשי הקשר"
+
+#: templates/index.html:54 templates/sign_receipt.html:20
+msgid "Clear"
+msgstr "נקה"
+
+#: templates/index.html:58
+msgid "Filtered Summary"
+msgstr "סיכום מסונן"
+
+#: templates/index.html:60
+msgid "Total Cartons:"
+msgstr "סה\"כ קרטונים:"
+
+#: templates/index.html:61
+msgid "Total Boxes:"
+msgstr "סה\"כ ארגזים:"
+
+#: templates/index.html:62
+msgid "Total Baskets:"
+msgstr "סה\"כ סלים:"
+
+#: templates/index.html:65
+msgid "Summary by Box Type"
+msgstr "סיכום לפי סוג ארגז"
+
+#: templates/index.html:71
+msgid "Total Cartons"
+msgstr "סה\"כ קרטונים"
+
+#: templates/index.html:72
+msgid "Total Boxes"
+msgstr "סה\"כ ארגזים"
+
+#: templates/index.html:73
+msgid "Total Baskets"
+msgstr "סה\"כ סלים"
+
+#: templates/index.html:86
+msgid "No summary data for this filter."
+msgstr "אין נתוני סיכום עבור סינון זה."
+
+#: templates/index.html:94
+msgid "All Transactions"
+msgstr "כל העסקאות"
+
+#: templates/index.html:99
+msgid "TX #"
+msgstr "מס' עסקה"
+
+#: templates/index.html:104
+msgid "From/To"
+msgstr "מאת/אל"
+
+#: templates/index.html:105
+msgid "Gen. Receipt"
+msgstr "צור קבלה"
+
+#: templates/index.html:106
+msgid "Orig. Scan"
+msgstr "סריקה מקורית"
+
+#: templates/index.html:107 templates/index.html:169
+msgid "Edit"
+msgstr "ערוך"
+
+#: templates/index.html:123
+msgid "IN"
+msgstr "נכנס"
+
+#: templates/index.html:125
+msgid "OUT"
+msgstr "יוצא"
+
+#: templates/index.html:160
+msgid "View"
+msgstr "צפה"
+
+#: templates/index.html:175
+msgid "No transactions found."
+msgstr "לא נמצאו עסקאות."
+
+#: templates/receive_stock.html:3
+msgid "Receive Stock (Boxes IN)"
+msgstr "קבלת מלאי (ארגזים נכנסים)"
+
+#: templates/receive_stock.html:19
+msgid "Source:"
+msgstr "מקור:"
+
+#: templates/receive_stock.html:22
+msgid "Existing Contact"
+msgstr "איש קשר קיים"
+
+#: templates/receive_stock.html:26
+msgid "Add New Sender"
+msgstr "הוסף שולח חדש"
+
+#: templates/receive_stock.html:31
+msgid "Contact (Source)"
+msgstr "איש קשר (מקור)"
+
+#: templates/receive_stock.html:43
+msgid "New Sender Details"
+msgstr "פרטי שולח חדש"
+
+#: templates/receive_stock.html:44
+msgid "New Sender Name"
+msgstr "שם שולח חדש"
+
+#: templates/receive_stock.html:47
+msgid "Sender Type:"
+msgstr "סוג שולח:"
+
+#: templates/receive_stock.html:48
+msgid "Supplier"
+msgstr "ספק"
+
+#: templates/receive_stock.html:51
+msgid "Phone (Optional)"
+msgstr "טלפון (אופציונלי)"
+
+#: templates/receive_stock.html:54
+msgid "Address (Optional)"
+msgstr "כתובת (אופציונלי)"
+
+#: templates/receive_stock.html:77
+msgid "Add to Inventory"
+msgstr "הוסף למלאי"
+
+#: templates/scan_delivery.html:3 templates/upload_ocr.html:3
+msgid "Scan Delivery Receipt (OUT)"
+msgstr "סרוק קבלת משלוח (יוצא)"
+
+#: templates/scan_delivery.html:4 templates/upload_ocr.html:4
+msgid ""
+"Upload a picture of a delivery receipt. The app will try to find the "
+"Store and Quantity to pre-fill the \"Send Delivery\" form."
+msgstr "העלה תמונה של קבלת משלוח. המערכת תנסה לזהות את החנות והכמות למילוי אוטומטי של טופס 'שליחת משלוח'."
+
+#: templates/scan_delivery.html:7 templates/scan_restock.html:7
+#: templates/upload_ocr.html:7
+msgid "Receipt Image"
+msgstr "תמונת קבלה"
+
+#: templates/scan_delivery.html:9 templates/scan_restock.html:9
+#: templates/upload_ocr.html:9
+msgid "Scan Image"
+msgstr "סרוק תמונה"
+
+#: templates/scan_restock.html:3
+msgid "Scan Restock Invoice (IN)"
+msgstr "סרוק חשבונית אספקה (נכנס)"
+
+#: templates/scan_restock.html:4
+msgid ""
+"Upload a picture of a supplier invoice. The app will try to find the Box "
+"Type and Quantity to pre-fill the \"Receive Stock\" form."
+msgstr "העלה תמונה של חשבונית ספק. המערכת תנסה לזהות את סוג הארגז והכמות למילוי אוטומטי של טופס 'קבלת מלאי'."
+
+#: templates/sign_receipt.html:3
+msgid "Sign for Delivery"
+msgstr "חתום על משלוח"
+
+#: templates/sign_receipt.html:13
+msgid "Please sign below:"
+msgstr "אנא חתום למטה:"
+
+#: templates/sign_receipt.html:21
+msgid "Confirm & Send Receipt"
+msgstr "אשר ושלח קבלה"
+
+#: templates/store_summary.html:3
+msgid "Delivery Summary for"
+msgstr "סיכום משלוחים עבור"
+
+#: templates/store_summary.html:9
+msgid "Total Quantity"
+msgstr "כמות כוללת"
+
+#: templates/store_summary.html:20
+msgid "No deliveries found for this store."
+msgstr "לא נמצאו משלוחים לחנות זו."
